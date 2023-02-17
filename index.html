@@ -23,7 +23,7 @@
                 <div class="dropdown dropdown-end">
                     <label tabindex="0" class="btn btn-ghost btn-circle">
                         <div class="indicator">
-                            <button class="btn btn-active btn-primary">Blog</button>
+                            <button id="new-page" class="btn btn-active btn-primary">Blog</button>
                         </div>
                     </label>
                 </div>
@@ -40,7 +40,6 @@
                     <div class="card-body items-center text-center">
                         <h2 id="first-name" class="card-title">Triangle</h2>
                         <p>Area (A) =0.5 * b * h</p>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
                         <div class="flex">
                             <input id="first-input" class="w-10 bg-accent text-base-200 mx-5 rounded" type="text">
                             cm
@@ -58,7 +57,6 @@
                     <div class="card-body items-center text-center">
                         <h2 id="second-name" class="card-title">Rectangle</h2>
                         <p>Area (A) = w * I</p>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
                         <div class="flex">
                             <input id="rec-input-one" class="w-10 bg-accent text-base-200 mx-5 rounded" type="text">
                             cm
@@ -74,17 +72,16 @@
                         <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Parallelogram</h2>
+                        <h2 id="third-name" class="card-title">Parallelogram</h2>
                         <p>Area (A) = b * h</p>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
                         <p> b=10cm, h=12cm</p>
                         <div class="flex">
-                            <input id="rec-input-one" class="w-10 bg-accent text-base-200 mx-5 rounded" type="text">
+                            <input id="para-input-one" class="w-10 bg-accent text-base-200 mx-5 rounded" type="text">
                             cm
-                            <input id="rec-input-two" class="w-10 bg-accent text-base-200 mx-5 rounded" type="text">cm
+                            <input id="para-input-two" class="w-10 bg-accent text-base-200 mx-5 rounded" type="text">cm
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary px-20">Calculate</button>
+                            <button id="third-btn" class="btn btn-primary px-20">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -93,12 +90,18 @@
                         <img src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Rhombus</h2>
+                        <h2 id="fourth-name" class="card-title">Rhombus</h2>
                         <p>Area (A) =0.5* d1* d2</p>
 
                         <p>d1 = 16cm d2</p>
+                        <div class="flex">
+                            <input id="rhombus-input-one" class="w-10 bg-accent text-base-200 mx-5 rounded" type="text">
+                            cm
+                            <input id="rhombus-input-two" class="w-10 bg-accent text-base-200 mx-5 rounded"
+                                type="text">cm
+                        </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary px-20">Calculate</button>
+                            <button id="fourth-btn" class="btn btn-primary px-20">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -107,11 +110,16 @@
                         <img src="images/pentagon.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Pentagon</h2>
+                        <h2 id="fifth-name" class="card-title">Pentagon</h2>
                         <p>Area (A) =0.5 * p *b</p>
                         <p>p = 6cm, b = 10cm</p>
+                        <div class="flex">
+                            <input id="pen-input-one" class="w-10 bg-accent text-base-200 mx-5 rounded" type="text">
+                            cm
+                            <input id="pen-input-two" class="w-10 bg-accent text-base-200 mx-5 rounded" type="text">cm
+                        </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary px-20">Calculate</button>
+                            <button id="fifth-btn" class="btn btn-primary px-20">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -120,11 +128,17 @@
                         <img src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Ellipse</h2>
+                        <h2 id="six-name" class="card-title">Ellipse</h2>
                         <p>Area (A) =π ab</p>
                         <p>a = 10cm, b = 4cm</p>
+                        <div class="flex">
+                            <input id="ellipse-input-one" class="w-10 bg-accent text-base-200 mx-5 rounded" type="text">
+                            cm
+                            <input id="ellipse-input-two" class="w-10 bg-accent text-base-200 mx-5 rounded"
+                                type="text">cm
+                        </div>
                         <div class="card-actions">
-                            <button class="btn btn-primary px-20">Calculate</button>
+                            <button id="six-btn" class="btn btn-primary px-20">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -134,7 +148,7 @@
                     <table class="table w-full">
                         <!-- head -->
                         <thead>
-                            <h2>Add calculate</h2>
+                            <h2 class="underline text-3xl text-info">Add calculate</h2>
                         </thead>
                         <tbody id="table-container">
                             <!-- row 1 -->
