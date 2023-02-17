@@ -66,6 +66,40 @@ document.getElementById('third-btn').addEventListener('click', function () {
     const toFixeds = parseFloat(addCalcu.toFixed(2))
     createElement(firstName, toFixeds, serial);
 })
+document.getElementById('fourth-btn').addEventListener('click', function () {
+    serial += 1;
+    const firstName = document.getElementById('fourth-name').innerText;
+
+    const firstInput = document.getElementById('rhombus-input-one');
+    const firstInputString = firstInput.value;
+    const firstInputTotal = parseFloat(firstInputString);
+
+
+    const secondInput = document.getElementById('rhombus-input-two');
+    const secondInputString = secondInput.value;
+    const secondInputTotal = parseFloat(secondInputString);
+
+    const addCalcu = 0.5 * firstInputTotal * secondInputTotal;
+    const toFixeds = parseFloat(addCalcu.toFixed(2))
+    createElement(firstName, toFixeds, serial);
+})
+document.getElementById('fifth-btn').addEventListener('click', function () {
+    serial += 1;
+    const firstName = document.getElementById('fifth-name').innerText;
+
+    const firstInput = document.getElementById('pen-input-one');
+    const firstInputString = firstInput.value;
+    const firstInputTotal = parseFloat(firstInputString);
+
+
+    const secondInput = document.getElementById('pen-input-two');
+    const secondInputString = secondInput.value;
+    const secondInputTotal = parseFloat(secondInputString);
+
+    const addCalcu = 0.5 * firstInputTotal * secondInputTotal;
+    const toFixeds = parseFloat(addCalcu.toFixed(2))
+    createElement(firstName, toFixeds, serial);
+})
 
 
 
