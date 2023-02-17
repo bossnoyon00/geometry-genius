@@ -15,7 +15,22 @@ document.getElementById('first-btn').addEventListener('click', function () {
     const addCalcu = 0.5 * firstInputTotal * secondInputTotal;
     createElement(firstName, addCalcu, serial);
 })
+document.getElementById('second-btn').addEventListener('click', function () {
+    serial += 1;
+    const firstName = document.getElementById('second-name').innerText;
 
+    const firstInput = document.getElementById('rec-input-one');
+    const firstInputString = firstInput.value;
+    const firstInputTotal = parseFloat(firstInputString);
+
+
+    const secondInput = document.getElementById('rec-input-two');
+    const secondInputString = secondInput.value;
+    const secondInputTotal = parseFloat(secondInputString);
+
+    const addCalcu = firstInputTotal * secondInputTotal;
+    createElement(firstName, addCalcu, serial);
+})
 
 
 
