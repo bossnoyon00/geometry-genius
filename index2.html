@@ -11,6 +11,93 @@
 </head>
 
 <body>
+    <header class="w-75 mb-5 mx-auto bg-warning">
+        <section class="mt-5 bg-warning">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button text-info fs-2 text" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            What is DOM and what is the purpose of DOM?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body bg-danger text-light">
+                            DOM stands for Document Object Model. It is a programming interface that allows us to
+                            create,
+                            change, or remove elements from the document. We can also add events to these elements to
+                            make our
+                            page more dynamic.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed text-info fs-2 text" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            How will you select HTML elements using DOM? Name the DOM methods.
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body  bg-danger text-light">
+                            1. getElementsByTagName() <br>
+                            2. getElementsByClassName() <br>
+                            3. getElementById() <br>
+                            4. querySelector() <br>
+                            5. querySelectorAll()
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed text-info fs-2 text" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            What is event bubble?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body  bg-danger text-light">
+                            Event bubbling directs an event to its target. It works like this:
+
+                            When an element (like a button) is clicked, an event is directed to the element.
+                            If an event handler is set for the element, the event handler is triggered.
+                            Then the event "bubbles up" to the elements parent.
+                            If an event handler is set for the parent, this event handler is triggered.
+                            The event continues to bubble, until it reaches the top.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                        <button class="accordion-button collapsed text-info fs-2 text" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour"
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                            What is a callback function and why will you use it?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingFour">
+                        <div class="accordion-body  bg-danger text-light">
+                            If you pass another function to a function as a parameter, it is called a callback function.
+                            These
+                            callback functions are often used in libraries and frameworks, such as the JavaScript
+                            applications
+                            jQuery, Angular, and Node.js. They are designed to extend functions and be called back for
+                            specific
+                            events or circumstances.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
