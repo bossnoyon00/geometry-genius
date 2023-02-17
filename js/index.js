@@ -100,6 +100,28 @@ document.getElementById('fifth-btn').addEventListener('click', function () {
     const toFixeds = parseFloat(addCalcu.toFixed(2))
     createElement(firstName, toFixeds, serial);
 })
+document.getElementById('six-btn').addEventListener('click', function () {
+    serial += 1;
+    const firstName = document.getElementById('six-name').innerText;
+
+    const firstInput = document.getElementById('ellipse-input-one');
+    const firstInputString = firstInput.value;
+    const firstInputTotal = parseFloat(firstInputString);
+
+
+    const secondInput = document.getElementById('ellipse-input-two');
+    const secondInputString = secondInput.value;
+    const secondInputTotal = parseFloat(secondInputString);
+
+    const addCalcu = Math.PI * firstInputTotal * secondInputTotal;
+    const toFixeds = parseFloat(addCalcu.toFixed(2))
+    createElement(firstName, toFixeds, serial);
+})
+
+
+document.getElementById('new-page').addEventListener('click', function () {
+    location.href = 'index2.html'
+})
 
 
 
