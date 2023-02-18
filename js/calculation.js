@@ -1,5 +1,6 @@
-//Serial no:
+//Serial no Count:
 let serial = 0;
+
 
 
 //First card calculation
@@ -87,7 +88,6 @@ document.getElementById('third-btn').addEventListener('click', function () {
 document.getElementById('fourth-btn').addEventListener('click', function () {
     serial += 1;
     const firstName = getElementValueById('fourth-name');
-
     const firstInput = getElementValueById('rhombus-input-one');
     const firstInputTotal = parseFloat(firstInput);
 
@@ -165,3 +165,5 @@ function createElement(firstName, addCalcu, serial) {
     `;
     container.appendChild(tr);
 }
+
+
