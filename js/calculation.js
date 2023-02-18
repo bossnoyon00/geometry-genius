@@ -5,7 +5,7 @@ let serial = 0;
 //First card calculation
 document.getElementById('first-btn').addEventListener('click', function () {
     serial += 1;
-    const firstName =getElementValueById('first-name');
+    const firstName = getElementValueById('first-name');
     const firstInput = document.getElementById('first-input');
     const firstInputString = firstInput.value;
     const firstInputTotal = parseFloat(firstInputString);
@@ -14,6 +14,8 @@ document.getElementById('first-btn').addEventListener('click', function () {
     const secondInput = document.getElementById('second-input');
     const secondInputString = secondInput.value;
     const secondInputTotal = parseFloat(secondInputString);
+
+    // Validation
     if (isNaN(firstInputTotal && secondInputTotal)) {
         return alert('please add a valid number')
     }
@@ -35,7 +37,7 @@ document.getElementById('first-btn').addEventListener('click', function () {
 //second card calculation
 document.getElementById('second-btn').addEventListener('click', function () {
     serial += 1;
-    const firstName =getElementValueById('second-name');
+    const firstName = getElementValueById('second-name');
 
     const firstInput = document.getElementById('rec-input-one');
     const firstInputString = firstInput.value;
@@ -45,6 +47,8 @@ document.getElementById('second-btn').addEventListener('click', function () {
     const secondInput = document.getElementById('rec-input-two');
     const secondInputString = secondInput.value;
     const secondInputTotal = parseFloat(secondInputString);
+
+    // Validation
     if (isNaN(firstInputTotal && secondInputTotal)) {
         return alert('please add a valid number')
     }
@@ -139,7 +143,7 @@ document.getElementById('six-btn').addEventListener('click', function () {
 
 //New page Link
 document.getElementById('new-page').addEventListener('click', function () {
-    location.href = 'index2.html'
+    location.href = 'blog.html';
 })
 
 
