@@ -1,6 +1,6 @@
 
 //Randomly card background color change :
-const colors = ["red", "green", "blue", "yellow", "orange", "tomato"];
+const colors = ["red", "green", "blue", "yellow",'cyan','magenta','khaki', "orange", "tomato"];
 
 function changeBackgroundColor(card) {
     const randomIndex = Math.floor(Math.random() * colors.length);
