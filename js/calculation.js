@@ -158,10 +158,10 @@ function createElement(firstName, addCalcu, serial) {
     const container = document.getElementById('table-container');
     const tr = document.createElement("tr");
     tr.innerHTML = `
-    <td>${serial}</td>
+    <td>${serial}.</td>
     <td>${firstName}</td>
-    <td>${addCalcu}</td>
-    <td> <button class="btn btn-primary">Convert to m2</button> </td>
+    <td>${addCalcu}cm<sup>2</sup></td>
+    <td> <button class="btn btn-primary">Convert to m<sup>2</sup></button> </td>
     `;
     container.appendChild(tr);
 }

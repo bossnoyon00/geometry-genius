@@ -11,7 +11,7 @@ function changeBackgroundColor(card) {
 const cards = document.getElementsByClassName("card");
 
 for (let i = 0; i < cards.length; i++) {
-    cards[i].onclick = function () {
+    cards[i].onmouseover = function () {
         changeBackgroundColor(this);
     };
 }

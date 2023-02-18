@@ -36,7 +36,7 @@
     <main>
         <!-- Body cart -->
         <section class="flex flex-col md:flex-row lg:px-12 mt-10">
-            <div class="w-[70%] lg:px-12 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="w-[68%] lg:px-12 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div class="card w-full bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
@@ -46,9 +46,11 @@
                         <h2 id="first-name" class="card-title">Triangle</h2>
                         <p>Area (A) =0.5 * b * h</p>
                         <div class="flex">
-                            <input id="first-input" class="w-10 bg-accent text-base-200 mx-5 rounded" type="text">
+                            <input id="first-input" class="w-10 mx-5 rounded" type="text"
+                                placeholder="b">
                             cm
-                            <input id="second-input" class="w-10 bg-accent text-base-200 mx-5 rounded" type="text">cm
+                            <input id="second-input" class="w-10 mx-5 rounded" type="text"
+                                placeholder="h">cm
                         </div>
                         <div class="card-actions">
                             <button id="first-btn" class="btn btn-primary px-20">Calculate</button>
@@ -64,9 +66,10 @@
                         <h2 id="second-name" class="card-title">Rectangle</h2>
                         <p>Area (A) = w * I</p>
                         <div class="flex">
-                            <input id="rec-input-one" class="w-10 bg-accent text-base-200 mx-5 rounded" type="text">
+                            <input id="rec-input-one" class="w-10 mx-5 rounded" type="text"
+                                placeholder="w">
                             cm
-                            <input id="rec-input-two" class="w-10 bg-accent text-base-200 mx-5 rounded" type="text">cm
+                            <input id="rec-input-two" class="w-10 mx-5 rounded" type="text" placeholder="i">cm
                         </div>
                         <div class="card-actions">
                             <button id="second-btn" class="btn btn-primary px-20">Calculate</button>
@@ -132,12 +135,12 @@
                     </div>
                 </div>
             </div>
-            <div class="w-[30%] mx-auto">
+            <div class="w-[32%] mx-auto">
                 <div class="overflow-x-auto">
                     <table class="table w-full">
                         <!-- head -->
                         <thead>
-                            <h2 class="underline text-3xl text-info">Add calculate</h2>
+                            <h2 class="underline text-3xl text-info">Area calculate</h2>
                         </thead>
                         <tbody id="table-container">
                             <!-- row 1 -->
