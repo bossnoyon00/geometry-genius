@@ -1,6 +1,6 @@
 # geometry-genius
 
-#Using 
--JavaScript
+# Using 
+- JavaScript
 
--netlify live link : https://genius-calculation.netlify.app/
+- netlify live link : https://genius-calculation.netlify.app/
